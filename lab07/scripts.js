@@ -54,7 +54,7 @@ function renderTodoList() {
     }
     }
      //การกดปุ่ม "เพิ่ม"
-    //addButton.addEventListener("click", addTodo); // เพิ่ม event listener สำหรับการกดปุ่ม "เพิ่ม"
+    addButton.addEventListener("click", addTodo); // เพิ่ม event listener สำหรับการกดปุ่ม "เพิ่ม"
     // การกด Enter ใน input
     //todoInput.addEventListener("keypress", function (event) {
     //if (event.key === "Enter") {     // ตรวจสอบว่ากดปุ่ม Enter
