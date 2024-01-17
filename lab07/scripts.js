@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // ลบรายการ Todo
-    //function deleteTodo(index) {
-    //todos.splice(index, 1);
-    //renderTodoList();
-   //}
+    function deleteTodo(index) {
+    todos.splice(index, 1);
+    renderTodoList();
+   }
 
     // ตรวจสอบ/ยกเลิกการเสร็จสิ้นรายการ Todo
     //function toggleComplete(index) {
@@ -56,11 +56,11 @@ function renderTodoList() {
      //การกดปุ่ม "เพิ่ม"
     addButton.addEventListener("click", addTodo); // เพิ่ม event listener สำหรับการกดปุ่ม "เพิ่ม"
     // การกด Enter ใน input
-    //todoInput.addEventListener("keypress", function (event) {
-    //if (event.key === "Enter") {     // ตรวจสอบว่ากดปุ่ม Enter
-    //addTodo();          // เรียกใช้ฟังก์ชัน addTodo() เมื่อกดปุ่ม Enter
-    //}
-    //});
+    todoInput.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {     // ตรวจสอบว่ากดปุ่ม Enter
+    addTodo();          // เรียกใช้ฟังก์ชัน addTodo() เมื่อกดปุ่ม Enter
+    }
+    });
     
     // แสดงรายการ Todo คร้ังแรก
     renderTodoList(); // เรียกใช้ฟังก์ชัน renderTodoList() เพื่อแสดงรายการ Todo ครั้งแรก
